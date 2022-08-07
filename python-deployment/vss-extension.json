@@ -1,0 +1,29 @@
+{
+  "manifestVersion": 1,
+  "id": "python-deployment",
+  "name": "Python Deployment Script",
+  "version": "0.1.0",
+  "publisher": "MICHAL53Q",
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Task used to run python deployment scripts with binded Auth arguments (subscription, tenant, client_id, client_secret)",
+  "categories": ["Azure Pipelines"],
+  "files": [
+    {
+      "path": "task"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "python-deployment",
+      "type": "ms.vss-distributed-task.task",
+      "targets": ["ms.vss-distributed-task.tasks"],
+      "properties": {
+        "name": "task"
+      }
+    }
+  ]
+}
